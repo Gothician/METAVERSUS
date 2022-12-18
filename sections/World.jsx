@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
 import { TitleText, TypingText } from '../components';
+import WorldMapCard from '../components/WorldMapCard';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -38,6 +39,20 @@ const World = () => (
         </div>
         <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
           <img src="people-03.png" alt="people" className="w-full h-full" />
+        </div>
+        <div className="absolute top-[33%] left-[15%]">
+          <WorldMapCard
+            title="The Upside Down"
+            joined="+ 264 has joined"
+            imgUrl="/map-card-01.png"
+          />
+        </div>
+        <div className="absolute top-[10%] right-[33%]">
+          <WorldMapCard
+            title="Hawkins Labs"
+            joined="+ 264 has joined"
+            imgUrl="/map-card-02.png"
+          />
         </div>
       </motion.div>
     </motion.div>
